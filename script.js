@@ -6,7 +6,7 @@ Sende det tilbake til HTML
 
 // const projectCard = document.getElementByID("projectCard");
 
-// En variabel som lager at vi henter et element som har ID-navnet projectCard
+// En variabel som lagrer at vi henter et element som har ID-navnet projectCard
 const projectCard = document.querySelector("#projectCard");
 console.log(projectCard);
 
@@ -52,11 +52,23 @@ projectCard.appendChild(projectCardInfo);
 // 
 // 
 
-const businessCard= document.querySelector("#businessCard");
+const businessCard = document.querySelector("#businessCard");
+console.log (businessCard);
 
 businessCard.innerHTML = `
 <h3>Tomas Erdal </h3>
 <img class="projectImage"<img src="HousePS1.jpg"
 alt=photoshop />
 <p>Meme Lord</p> `
+
+const businessCardHeading = document.createElement("h3");
+console.log (businessCardHeading);
+
+const businessCardImage = document.createElement("img");
+console.log (businessCardImage);
+
+const businessCardInfo = document.createElement("p");
+console.log (businessCardInfo);
+
+projectCardHeading.textContent = "Tomas Erdal";
 
